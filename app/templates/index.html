@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículo X</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Currículo <span>X</span></h1>
+    <p>Análise inteligente de currículos com IA</p>
+  </header>
+
+  <main>
+  <section class="input-section">
+  <div class="tabs">
+    <button class="tab ativo" onclick="trocarTab('texto')">Colar texto</button>
+    <button class="tab" onclick="trocarTab('arquivo')">Enviar arquivo</button>
+  </div>
+
+  <div id="tab-texto">
+    <label for="curriculo">Cole o currículo aqui</label>
+    <textarea id="curriculo" placeholder="Nome: João Silva&#10;Experiência: ..."></textarea>
+  </div>
+
+  <div id="tab-arquivo" style="display:none;">
+    <label>Selecione um arquivo PDF ou TXT</label>
+    <div class="upload-area" onclick="document.getElementById('arquivo-input').click()">
+      <span id="upload-label">📄 Clique para selecionar o arquivo</span>
+      <input type="file" id="arquivo-input" accept=".pdf,.txt" style="display:none;"
+        onchange="arquivoSelecionado(this)">
+    </div>
+  </div>
+
+  <button id="analisar-btn" onclick="analisar()">Analisar currículo</button>
+</section>
+
+    <div id="loading" style="display:none;">
+      <div class="spinner"></div>
+      <p>Analisando currículo...</p>
+    </div>
+
+    <section class="resultado-section" id="resultado" style="display:none;">
+      <div class="nota-card">
+        <span class="nota-label">Nota geral</span>
+        <span class="nota-valor" id="nota">—</span>
+        <span class="nota-max">/10</span>
+      </div>
+      <div class="cards-grid">
+        <div class="card card-verde">
+          <h3>✅ Pontos Fortes</h3>
+          <ul id="pontos-fortes"></ul>
+        </div>
+        <div class="card card-vermelho">
+          <h3>⚠️ Pontos Fracos</h3>
+          <ul id="pontos-fracos"></ul>
+        </div>
+        <div class="card card-azul">
+          <h3>💡 Sugestões</h3>
+          <ul id="sugestoes"></ul>
+        </div>
+      </div>
+    </section>
+
+    <div id="erro" style="display:none;">
+      <p id="erro-msg"></p>
+    </div>
+
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
