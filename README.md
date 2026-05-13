@@ -6,11 +6,9 @@ Análise inteligente de currículos com IA. Cole o texto ou envie um arquivo PDF
 
 <img width="1142" height="569" alt="image" src="https://github.com/user-attachments/assets/28ccb849-4c79-451c-9680-01dc26402566" />
 
+<img width="1108" height="508" alt="image" src="https://github.com/user-attachments/assets/49315c97-fe45-4eb9-b5e5-5c0839aa2879" />
 
 <img width="966" height="870" alt="Captura de tela 2026-05-13 132228" src="https://github.com/user-attachments/assets/899a0df7-bf3b-4a1d-ab70-02e2af018822" />
-
-
-<img width="1108" height="508" alt="image" src="https://github.com/user-attachments/assets/49315c97-fe45-4eb9-b5e5-5c0839aa2879" />
 
 
 ## 🚀 Tecnologias
