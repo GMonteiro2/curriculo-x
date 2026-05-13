@@ -7,6 +7,9 @@ Análise inteligente de currículos com IA. Cole o texto ou envie um arquivo PDF
 <img width="1142" height="569" alt="image" src="https://github.com/user-attachments/assets/28ccb849-4c79-451c-9680-01dc26402566" />
 
 
+<img width="966" height="870" alt="Captura de tela 2026-05-13 132228" src="https://github.com/user-attachments/assets/899a0df7-bf3b-4a1d-ab70-02e2af018822" />
+
+
 <img width="1108" height="508" alt="image" src="https://github.com/user-attachments/assets/49315c97-fe45-4eb9-b5e5-5c0839aa2879" />
 
 
@@ -82,10 +85,10 @@ Analisa um currículo via upload de arquivo PDF ou TXT.
 **Resposta de ambos os endpoints:**
 ```json
 {
-  "pontos_fortes": ["..."],
-  "pontos_fracos": ["..."],
-  "sugestoes": ["..."],
-  "nota_geral": 8
+ "pontos_fortes": ["...", "..."],
+        "pontos_fracos": ["...", "..."],
+        "sugestoes": ["...", "..."],
+        "nota_geral": <número de 1 a 10 baseado na qualidade real do currículo, sendo 1 péssimo e 10 excelente>
 }
 ```
 
